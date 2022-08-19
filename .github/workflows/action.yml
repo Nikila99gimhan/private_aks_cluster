@@ -14,10 +14,10 @@ jobs:
       ARM_CLIENT_SECRET: ${{ secrets.AZURE_AD_CLIENT_SECRET }}
       ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       ARM_TENANT_ID: ${{ secrets.AZURE_AD_TENANT_ID }}
-      aks_service_principal_client_id: ${{secrets.AZURE_AD_CLIENT_ID}}
-      aks_service_principal_client_secret: ${{secrets.AZURE_AD_CLIENT_SECRET}}
-      bastion_admin_username: ${{secrets.bastion_admin_username}}
-      bastion_admin_password: ${{secrets.bastion_admin_password}}
+      TF_VAR_aks_service_principal_client_id: ${{secrets.AZURE_AD_CLIENT_ID}}
+      TF_VAR_aks_service_principal_client_secret: ${{secrets.AZURE_AD_CLIENT_SECRET}}
+      TF_VAR_bastion_admin_username: ${{secrets.bastion_admin_username}}
+      TF_VAR_bastion_admin_password: ${{secrets.bastion_admin_password}}
 
     runs-on: ubuntu-latest
     environment: production
