@@ -7,17 +7,17 @@ variable "location" {
 }
 
 variable "aks_service_principal_client_id" {
-  type    = string
+  type = string
 }
 
 variable "aks_service_principal_client_secret" {
-  type    = string
+  type = string
 }
 
 variable "bastion_admin_username" {
-  type    = string
+  type = string
 }
 
 variable "bastion_admin_password" {
-  type    = string
+  type = string
 }
