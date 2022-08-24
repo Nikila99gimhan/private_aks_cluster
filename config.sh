@@ -49,7 +49,7 @@ az account show
 
 # Get Kubernetes cluster config
 az aks get-credentials --name aks-my-cluster \
-    --resource-group rg-private-aks-demo \
+    --resource-group rg-private-aks \
     --subscription $ARM_SUBSCRIPTION_ID \
     --admin
 
