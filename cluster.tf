@@ -4,9 +4,7 @@ resource "azurerm_kubernetes_cluster" "my_aks" {
   resource_group_name = azurerm_resource_group.my_rg.name
   dns_prefix          = "aks-cluster"
 
-
   private_cluster_enabled = true
-
 
   network_profile {
     network_plugin     = "kubenet"

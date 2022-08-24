@@ -9,7 +9,7 @@ resource "azurerm_network_interface" "bastion_nic" {
   }
 }
 
-resource "azurerm_linux_virtual_machine" "example" {
+resource "azurerm_linux_virtual_machine" "bastion_vm" {
   name                            = "vm-bastion"
   location                        = var.location.value
   resource_group_name             = azurerm_resource_group.my_rg.name
