@@ -11,7 +11,7 @@ resource "azurerm_subnet" "snet_cluster" {
   virtual_network_name = azurerm_virtual_network.vnet_cluster.name
   address_prefixes     = ["10.1.0.0/24"]
 
-  enforce_private_link_endpoint_network_policies = true
+  private_endpoint_network_policies_enabled = true
 }
 
 resource "azurerm_virtual_network" "vnet_bastion" {
